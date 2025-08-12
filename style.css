@@ -1,0 +1,114 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  text-align: center;
+  background-color: hsl(79, 0%, 26%);
+  padding: 10px;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, i {
+  color: hsl(79, 0%, 90.8%);
+}
+
+input, textarea {
+  border-radius: 15px;
+  text-align: center;
+  background-color: hsl(237, 49%, 21.4%);
+}
+
+#projects > div > img {
+  border-radius: 15px;
+}
+
+#projects {
+  background: linear-gradient(to bottom, hsl(79, 0%, 26%), hsl(237, 100%, 9.7%));
+  width: 100%;
+}
+
+#image {
+  animation: move 2000ms ease-in 0s 1 normal none;
+  animation-play-state: paused;
+}
+
+#image:hover {
+  animation-play-state: running;
+}
+
+footer {
+  background: linear-gradient(to top, hsl(79, 0%, 26%), hsl(237, 100%, 9.7%));
+  position: relative;
+  bottom: 22px;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(-200px);
+    color: hsl(186, 100%, 50.4%);
+  }
+  100% {
+    transform: translateY(0px);
+    color: hsl(79, 0%, 90.8%);
+  }
+}
+@keyframes move {
+  25% {
+    transform: translateX(50px);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes github {
+  0% {
+    color: hsl(79, 0%, 90.8%);
+  }
+  50% {
+    color: black;
+  }
+  100% {
+    color: hsl(79, 0%, 90.8%);
+  }
+}
+@keyframes inst {
+  0% {
+    color: hsl(79, 0%, 90.8%);
+  }
+  50% {
+    color: hsl(276, 92.5%, 64.2%);
+  }
+  100% {
+    color: hsl(79, 0%, 90.8%);
+  }
+}
+@keyframes linkd {
+  0% {
+    color: hsl(79, 0%, 90.8%);
+  }
+  50% {
+    color: hsl(211, 92.5%, 64.2%);
+  }
+  100% {
+    color: hsl(79, 0%, 90.8%);
+  }
+}
+#x {
+  animation: jump 3000ms ease-in-out 0s 1 normal none;
+}
+
+#insta {
+  animation: inst 2s linear 0s 1 normal none;
+}
+
+#linkd {
+  animation: linkd 2s linear 0s 1 normal none;
+}
+
+#github {
+  animation: github 2s linear 0s 1 normal none;
+}/*# sourceMappingURL=style.css.map */
